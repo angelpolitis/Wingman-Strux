@@ -1,0 +1,36 @@
+{
+    "name": "wingman/strux",
+    "type": "library",
+    "description": "A comprehensive suite of typed, immutable-capable data structures for PHP applications, including collections, maps, sets, queues, graphs, and more.",
+    "keywords": ["php", "data-structures", "collection", "map", "set", "graph", "queue", "stack", "wingman"],
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "Angel Politis",
+            "email": "info@angelpolitis.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "wingman/argus": ">=1.0"
+    },
+    "suggest": {
+        "wingman/argus": "Required to run the test suite.",
+        "wingman/corvus": "Enables signal emission via the Corvus bridge.",
+        "wingman/verix": "Enables schema-based type validation via the Verix bridge."
+    },
+    "autoload": {
+        "psr-4": {
+            "Wingman\\Strux\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wingman\\Strux\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
